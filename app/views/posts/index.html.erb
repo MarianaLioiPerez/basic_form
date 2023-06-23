@@ -1,0 +1,10 @@
+
+<%# index.html.erb %>
+<h1>Mostrando todos los Posts</h1>
+
+<% @posts.each do |p| %>
+
+    <h2><%= p.title %></h2>
+    <p><%= p.content %></p>
+    <%= link_to "Agregar nuevo Post", posts_new_path %>
+<% end%>
